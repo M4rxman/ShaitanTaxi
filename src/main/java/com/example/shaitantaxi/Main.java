@@ -1,3 +1,11 @@
+// Некрасов М.А., Алещенко О.С.
+// ООП на мові Java
+// 2 червня 2024
+// Ми визнаємо, що це наша командна робота
+/* Дана програма призначена для замовлення таксі для працівників офісу.
+В програмі можно вибирати клас авто, кількість пасажирів , спосіб оплати та додаткові опції
+*/
+
 package com.example.shaitantaxi;
 
 import javafx.application.Application;
@@ -9,6 +17,10 @@ import javafx.stage.Stage;
 public class Main extends Application {
 
     private TaxiOrderController controller;
+
+    public static void main(String[] args) {
+        launch(args);
+    }
 
     @Override
     public void start(Stage stage) throws Exception {
@@ -27,7 +39,4 @@ public class Main extends Application {
         controller.cleanup();
     }
 
-    public static void main(String[] args) {
-        launch(args);
-    }
 }
